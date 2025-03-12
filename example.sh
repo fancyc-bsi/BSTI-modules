@@ -1,5 +1,5 @@
 #!/bin/bash
-# File: example_scanner.sh
+# File: example.sh
 # This is an example scanner module for BSTI
 
 # Access command line arguments
