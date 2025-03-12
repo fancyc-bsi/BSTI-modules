@@ -1,6 +1,37 @@
 #!/bin/bash
-# File: example.sh
-# This is an example scanner module for BSTI
+# @MODULE_METADATA_BEGIN
+# {
+#   "Name": "Example Scanner",
+#   "Description": "An example module that demonstrates how to create a scanner for BSTG",
+#   "Version": "1.0.0",
+#   "Author": "Your Name",
+#   "Type": "bash",
+#   "Args": [
+#     {
+#       "Name": "target_host",
+#       "Description": "Target host to scan",
+#       "Type": "string",
+#       "Required": true,
+#       "Default": ""
+#     },
+#     {
+#       "Name": "port",
+#       "Description": "Port to scan",
+#       "Type": "int",
+#       "Required": true,
+#       "Default": "443"
+#     },
+#     {
+#       "Name": "scan_type",
+#       "Description": "Type of scan to perform (quick or full)",
+#       "Type": "string",
+#       "Required": false,
+#       "Default": "quick"
+#     }
+#   ],
+#   "Tags": ["scanner", "example", "network"]
+# }
+# @MODULE_METADATA_END
 
 # Access command line arguments
 TARGET_HOST=$1
